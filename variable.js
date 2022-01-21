@@ -37,7 +37,7 @@ console.log(age);
 
 /////////////////////////////////////////////////////////////////////////////////////
 
-// 3. Constants
+// 3. Constants 상수
 // 프로그램이 실행되는 동안(선언과 값설정을 동시에 했다면) 값을 변경할수 없는 것을 말한다.
 // 쉽게 말해 다시 재정의가 불가능 한 변환되지 않는 값을 말한다.
 // - security
@@ -59,7 +59,6 @@ const size = 17.1; // decimal number 소수점의 숫자
 console.log(`value: ${count}, type: ${typeof count}`);
 console.log(`value: ${size}, type: ${typeof size}`);
 
-///////////////////////////////////////////////////////////////////////////////////
 
 // number - speicla numeric values: infinity, -infinity, NaN
 // 계산할때 나누고자하는 값을 정확하게 확인하지 않고 연산을 하면 에러가 발생  
@@ -71,14 +70,12 @@ console.log(infinity);
 console.log(negativeInfinity);
 console.log(nAn);
 
-///////////////////////////////////////////////////////////////////////////////////
 
 //bigInt (fairly new, don't use it  yet) 숫자 마지막에 n을 붙이면 큰 숫자로 확인하는 최신 버젼
 const bigInt = 123456789012345678901234567890n; // over (-2**53) ~ 2*53)
 console.log(`value: ${bigInt}, type: ${typeof bigInt}`);
 Number.MAX_SAFE_INTEGER;
 
-///////////////////////////////////////////////////////////////////////////////////
 
 // string 스트링끼리 +기호로 연결가능
 const char = 'c';
@@ -89,8 +86,40 @@ console.log(`value: ${greeting}, type: ${typeof greeting}`);
  //template literals (string) 변수값을 붙일 수 있다.
 const helloBob = `hi ${brendan}!`;
 console.log(`value: ${helloBob}, type: ${typeof helloBob}`);
-
 //이렇게 간편하게 출력가능
 console.log('value: ' + helloBob + ' type: ' + typeof helloBob); 
 
+// boolean 참과 거짓
+// false: 0, null, undefined, NaN, ''비어있는스트링
+// true: any other value
+const canRead = true; 
+const test = 3 < 1; //false 3이 1보다 작으면 거짓
+console.log(`value: ${canRead}, type: ${typeof canRead}`);
+console.log(`value: ${test}, type: ${typeof test}`);
+
+// null 
+let nothing = null;
+console.log(`value: ${nothing}, type: ${typeof nothing}`);
+
+// undefined 선언은 되었지만 값이 지정되어있지않은상태
+let x;  
+console.log(`value: ${x}, type; ${typeof x}`);
+
+// symbol, create unique identifiers for objects
+// 고유한 식별자를 만들때 둘은 같지 않다.
+const symbol1 = Symbol('id'); 
+const symbol2 = Symbol('id');
+console.log(symbol1 === symbol2); //false
+
+// 스트링이 똑같다면 for을 사용해서 같게 만들어달라고 요청가능
+const gSymbol1 = Symbol.for('id');
+const gSymbol2 = Symbol.for('id');
+console.log(gSymbol1 === gSymbol2); //true 
+
+// 출력시 .description사용하여 스트링으로 변환해서 출력해야함
+console.log(`value: ${symbol1.description}, type: ${typeof symbol1}`);
+
 ///////////////////////////////////////////////////////////////////////////////////
+
+
+5. 
