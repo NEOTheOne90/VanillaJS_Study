@@ -119,7 +119,33 @@ console.log(gSymbol1 === gSymbol2); //true
 // 출력시 .description사용하여 스트링으로 변환해서 출력해야함
 console.log(`value: ${symbol1.description}, type: ${typeof symbol1}`);
 
+//object, real-life object, data structure
+//neo는 편경불가 name과 , age는 변경이 가능한 변수이기때문에 변경가능
+const neo = {name: 'neo', age: 100};
+neo.age = 20; //변경이 가능
+
 ///////////////////////////////////////////////////////////////////////////////////
 
+// 5. Dynamic typing: dynamically typed language
 
-5. 
+
+let text = 'hello'; //type이 string이됨.
+console.log(text.charAt(0)); //첫번째 문자 보여줘
+
+console.log(`value: ${text}, type: ${typeof text}`);
+
+text = 1;  //type이 number가 됨
+console.log(`value: ${text}, type: ${typeof text}`);
+
+//string '7'과 number 5를 더해버리면, 자바스크림트 엔진이 5를 string으로 변환해줌
+text = '7' + 5; 
+console.log(`value: ${text}, type: ${typeof text}`);
+
+//string과 string을 나누면 안에 숫자를 인식하고 number로 변환 나누어줌.
+text = '8' / '2';
+console.log(`value: ${text}, type: ${typeof text}`);
+console.log(text.charAt(0)); // 첫번째 문자 보여줘 안보여짐, number로 변경된상태;
+
+// 다이나믹 타이핑때문에 타입스크립트가 나옴.
+// TS의 출몰 자바스크립트에 타입이 얹어진 언어이다.
+// JS를 충분히 배우고 TS를 배우면됨.
