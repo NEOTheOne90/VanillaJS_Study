@@ -50,3 +50,22 @@ const postDecrement = counter--;  // 2
 console.log(`postDecrement: ${postDecrement}, counter: ${counter}`); 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
+
+// 4. Assignment operators 할당연산자
+let x = 3;
+let y = 6;
+x += y;  // x = x + y; 반복되는 x를 생략한 수식을 많이 사용하게된다.
+x -= y;
+x *= y;
+x /= y;
+console.log();
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+// 5. Comparison operators 비교연산자
+console.log(10 < 6);  // less than 작음
+console.log(10 <= 6); // less than or equal 작거나 같음
+console.log(10 > 6);  // greater than  큼
+console.log(10 >= 6); // greater than or equal 크거나 같음
+
+///////////////////////////////////////////////////////////////////////////////////////////////
