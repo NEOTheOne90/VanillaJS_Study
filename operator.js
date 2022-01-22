@@ -1,5 +1,5 @@
-// 1. String concatenation
-console.log('my' + 'car'); //문자와 문자를
+// 1. String concatenation 문자열의 연결
+console.log('my' + 'car'); 
 console.log('1' + 2); //문자열에 숫자를 더하면 숫자가 =>문자열로 변환됨.
 console.log(`string literals:  1 + 2 = ${1 + 2}`); //백틱기호로 변수값을 계산해 스트링에 포함해서 출력됨
 
