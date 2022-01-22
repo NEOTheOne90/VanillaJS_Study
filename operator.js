@@ -69,3 +69,39 @@ console.log(10 > 6);  // greater than  큼
 console.log(10 >= 6); // greater than or equal 크거나 같음
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
+
+// 6. Logical operators: || (or), && (and), ! (not) 세가지 논리연산자
+const value1 = false;
+const value2 = 4 < 2;
+
+//(6-1) || (or) => or 연산자는 첫번째 true값을 찾으면 멈춘다. 
+// finds the first truthy value(첫번째 true값을 찾는다.)
+// 아래 세가지중 하나라도 true이면 true로 계산되는 연산자이다.
+console.log(`or: ${value1 || value2 || check()}`);  
+//효율적인 코드작성을 위해 심플한 value를 앞에서 계산하고 마지막에 함수로 호출하는 아이를 배치
+
+// value1 = false
+// value2 = 4보다 2가 작나 ? false
+// check라는 함수는 시간을 끌다가 결국 true로 리턴함
+// 결론 true로 출력이 되버림.
+function check() {
+   for (let i = 0; i < 10; i++) {
+       //westing time
+       console.log('😱');
+   }
+   return true;
+}
+
+// (6-2) && (and) 
+// finds the first falsy value (첫번째 false값을 찾는다.)
+console.log(`and: ${value1 && value2 && check()}`);
+// and 연산자는 간편하게 null체크할때도 많이 사용된다.
+// nullableobject && nullableobject.something
+// if (nullableobject != null) {
+//    nullableobject.something;
+// }
+
+// (6-3) ! (not)
+// 값을 반대로 바꾸어준다. 
+// value1 값이 false 이지만 true로 바꿔서 출력이됨.
+console.log(!value1);
