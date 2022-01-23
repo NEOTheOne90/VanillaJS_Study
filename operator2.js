@@ -82,4 +82,18 @@ switch (browser) {
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-// 11. Loops
+// 11. Loops 반복문
+// While loop, while the ondition is truthy,
+// body code is executed.
+let i = 3;
+while (i > 0) {  
+    console.log(`while: ${i}`);
+    i--; // i가 0보다 크면 감소시켜서 출력
+}
+
+// do while loop, body code is executed first, 
+// then check the condition. 
+do {
+    console.log(`do while: ${i}`);
+    i--;           // 위에서 값이 0이지만 블럭 안에 내용을 실행시켜버림.
+} while (i > 0);   // 블럭을 먼저 실행하고 싶다면 do while을 사용한다.
