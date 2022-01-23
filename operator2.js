@@ -57,3 +57,29 @@ console.log('unkwnon');
 console.log(name === 'neo' ? 'yes' : 'no'); 
 
 ////////////////////////////////////////////////////////////////////////////////////////////
+
+// 10. Switch statment 스위치 문
+// use for multiple if checks 
+// use for enum-like value check
+// use for multiple type checks in TS
+
+const browser = 'Firefox'; // <= 뭐가 들어있는지 확인후에 출력
+switch (browser) {
+    case 'IE':
+        console.log('go away!');
+        break;
+    case 'Chrome':
+    case 'Google':  // 함께 써도 됨
+        console.log('love you');
+        break;
+    case 'Firefox':
+        console.log('like you');
+        break;
+    default:
+        console.log('same all!');
+        break;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+// 11. Loops
