@@ -97,3 +97,42 @@ do {
     console.log(`do while: ${i}`);
     i--;           // 위에서 값이 0이지만 블럭 안에 내용을 실행시켜버림.
 } while (i > 0);   // 블럭을 먼저 실행하고 싶다면 do while을 사용한다.
+
+// for loop, for(begin; condition; step)
+// begin한번만 호출하고 컨디션이 맞으면 스텝으로 실행 
+// 컨디션이 맞지 않을때 까지 반복
+for (i = 3; i > 0; i--) {
+    console.log(`for: ${i}`);
+}
+
+for (let i = 3; i > 0; i = i - 2) {
+    /// inline veriable declaration 인라인 검증 가능 선언
+    console.log(`inline veriable for: ${i}`);
+}
+
+// nested loops
+for (let i = 0; i < 10; i++) {
+    for (let j = 0; j < 10; j++) {
+        console.log(`i: ${i}, j:${j}`);
+    }
+}
+
+// break => 루프를 완전히 끝내는것  |    continue => 지금껏 스킵 다음으로 넘어가는것
+// Q1. iterate from 0 to 10 and print only even numbers (use continue)
+// 숫자를 0부터 10까지 짝수인 아이들만 프린트 
+for (let i = 0; i < 11; i++) {
+    if (i % 2 !== 0) {
+        continue; //숫자가 홀수이면 다음으로 넘김 
+    }
+    console.log(`q1. ${i}`);
+}
+
+
+// Q2. iterate from 0 to 10 and print numbers nutil reching 8 (use break)
+// 0부터 10까지 루프 8을 만나면 스톱
+for (let i = 0; i < 11; i++) {
+    if (i > 8) {
+        break;
+    }
+    console.log(`q2. ${i}`);
+}
