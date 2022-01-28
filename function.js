@@ -1,4 +1,4 @@
-// Function
+// Function 기능
 
 function printHello() {
     console.log('Hello');
@@ -17,6 +17,12 @@ log(1234);
 function changeName(obj) {
     obj.name = 'coder';
 }
-const ellie = { name: 'neo' };
+const neo = { name: 'neo' };
 changeName(neo);
 console.log(neo);
+
+// 3. Default parameters (added in ES6) 기본 매개변수(ES6에 추가됨)
+function showMessage(message, from) {
+    console.log(`${message} by ${from}`);
+}
+showMessage('Hi!');
