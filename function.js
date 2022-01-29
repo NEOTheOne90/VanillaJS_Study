@@ -95,22 +95,39 @@ function upgradeUser(user) {
 
 //////////////////////////////////////////////////////////////////////
 
-// 1-2 Function expression 함수 표현
+// 2-1 Function expression 함수 표현
 
-// functions are treated like any ather variable
 // 함수는 다른 변수처럼 취급됩니다.
-// can be assioned as a value to variable
 // 변수에 값으로 할당할 수 있습니다.
-// can be passed as an argument to other functions.
-// can be returned by another function
+// 다른 함수에 인수로 전달할 수 있습니다. 
+// 다른 함수에서 반환될 수 있습니다.
 
-// 1. Function expression
-// 함수가 선언되기 이전에 호출해도 가능하다.
-const print = function () { //
-    console.log('print');
+// 2-1 Function expression 
+// 함수가 선언되기 이전에 호출해도 호출이 가능하다.
+const print = function () { // 함수선언과 동시에 print에 할당이된다.
+    console.log('print');   // anonymous function 이름이 없는 함수
 };
 print();
 const printAgain = print;
 printAgain;
-const sumAgain = sum;
+const sumAgain = sum; // 위에서 만든 sum을 변수에 할당하면 또 불러올 수 있다.
 console.log(sumAgain(1, 3));
+
+// 2-2 Callback function using function expression
+// 함수 표현식을 사용한 콜백 함수
+function randomQuiz(answer, printYes, printNo) {
+  if (answer === 'love you'){
+    printYes();
+  } else {
+    printNo();
+  }
+}
+const printYes = function () { 
+    console.log('yes!');
+};
+
+const printNo = function print() {
+    console.log('no!');
+};
+randomQuiz('wrong', printYes, printNo); 
+randomQuiz('love you', printYes, printNo);
