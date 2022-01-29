@@ -1,4 +1,6 @@
 // Function 기능
+// 하나의 function은 하나의 thing일을 처리한다.
+// function 은 object의 일종이다.
 
 function printHello() {
     console.log('Hello');
@@ -33,10 +35,15 @@ console.log(`${message} by ${from}`);
 }
 showMessage('Hi!');
 
-// 4. Rest parameters (added in ES6)
+// 4. Rest parameters (added in ES6) ... <을 사용 배열형태로 전달
 function printAll(...args) {
     for (let i = 0; i < args.length; i++) {
         console.log(args[i]);
     }
+
+    for (const arg of args) { //이렇게 출력시킬수도 있다.
+        console.log(arg); 
+    }
+    args.forEach((arg) => console.log(arg));
 }
 printAll('forest', 'mountain', 'neo');
