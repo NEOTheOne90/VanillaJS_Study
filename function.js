@@ -72,5 +72,45 @@ printMessage();
 function sum(a,b) {
     return a + b;
 }
-const result = sum(1,2); //3
+const result = sum(1,2); // sum이라는 함수를 사용해서 3을 출력
 console.log(`sum: ${sum(1,2)}`);
+
+//////////////////////////////////////////////////////////////////////
+
+// 7. Early return, early exit
+// bad code 
+function upgradeUser(user) {
+    if (user.point > 10) {
+        //long upgrade logic... 긴 업그레이드글
+    }
+}
+
+// good code
+function upgradeUser(user) {
+    if (user.point <= 10) { 
+        return; // 조건에 맞지않으면 빨리 return시키고 맞을때만 진행되도록
+    }
+    // long upgrade logic... 
+}
+
+//////////////////////////////////////////////////////////////////////
+
+// 1-2 Function expression 함수 표현
+
+// functions are treated like any ather variable
+// 함수는 다른 변수처럼 취급됩니다.
+// can be assioned as a value to variable
+// 변수에 값으로 할당할 수 있습니다.
+// can be passed as an argument to other functions.
+// can be returned by another function
+
+// 1. Function expression
+// 함수가 선언되기 이전에 호출해도 가능하다.
+const print = function () { //
+    console.log('print');
+};
+print();
+const printAgain = print;
+printAgain;
+const sumAgain = sum;
+console.log(sumAgain(1, 3));
