@@ -28,7 +28,15 @@ console.log(neo);
 // showMessage('Hi!'); 
 // message는 출력이 잘되지만 from이 정이 되어있지않아서 undefined가뜸
 
-function showMessage(message, from = 'unknow') {
+function showMessage(message, from = 'unknow') { //파라미터 옆에 원하는 디폴트값을 설정하면 출력이가능
 console.log(`${message} by ${from}`);
 }
 showMessage('Hi!');
+
+// 4. Rest parameters (added in ES6)
+function printAll(...args) {
+    for (let i = 0; i < args.length; i++) {
+        console.log(args[i]);
+    }
+}
+printAll('forest', 'mountain', 'neo');
