@@ -22,7 +22,13 @@ changeName(neo);
 console.log(neo);
 
 // 3. Default parameters (added in ES6) 기본 매개변수(ES6에 추가됨)
-function showMessage(message, from) {
-    console.log(`${message} by ${from}`);
+//function showMessage(message, from) {
+//    console.log(`${message} by ${from}`);
+//}
+// showMessage('Hi!'); 
+// message는 출력이 잘되지만 from이 정이 되어있지않아서 undefined가뜸
+
+function showMessage(message, from = 'unknow') {
+console.log(`${message} by ${from}`);
 }
 showMessage('Hi!');
