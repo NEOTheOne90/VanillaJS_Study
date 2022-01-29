@@ -95,7 +95,7 @@ function upgradeUser(user) {
 
 //////////////////////////////////////////////////////////////////////
 
-// 2-1 Function expression 함수 표현
+// 2 Function expression 함수 표현
 
 // 함수는 다른 변수처럼 취급됩니다.
 // 변수에 값으로 할당할 수 있습니다.
@@ -131,3 +131,9 @@ const printNo = function print() {
 };
 randomQuiz('wrong', printYes, printNo); 
 randomQuiz('love you', printYes, printNo);
+
+// 2-3 Arrow function
+// always anonymous
+const simplePrint = function () {
+    console.log('simplePrint!');
+}
