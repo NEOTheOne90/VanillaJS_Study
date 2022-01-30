@@ -136,4 +136,10 @@ randomQuiz('love you', printYes, printNo);
 // always anonymous
 const simplePrint = function () {
     console.log('simplePrint!');
+};
+
+const simplePrint = () => console.log('simplePrint!');
+const add = (a,b) => a + b; // 간결하게 표현이 가능하다.
+const simpleMultiply = (a, b) => {
+    return a * b;
 }
