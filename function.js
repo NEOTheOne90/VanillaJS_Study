@@ -134,12 +134,16 @@ randomQuiz('love you', printYes, printNo);
 
 // 2-3 Arrow function
 // always anonymous
-const simplePrint = function () {
-    console.log('simplePrint!');
-};
+//const simplePrint = function () {
+//    console.log('simplePrint!');
+//};
 
 const simplePrint = () => console.log('simplePrint!');
 const add = (a,b) => a + b; // 간결하게 표현이 가능하다.
 const simpleMultiply = (a, b) => {
     return a * b;
-}
+};
+// IIFE: Immediately Invoked Function Expression 즉시 호출되는 함수 표현식
+(function hello() {
+    console.log('IIFE');
+})(); //선언함과 동시에 함수를 바로 호출할 수 있다.  
