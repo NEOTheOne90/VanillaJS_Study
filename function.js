@@ -152,11 +152,3 @@ const simpleMultiply = (a, b) => {
 // function calculate (command, a, b) 
 // 함수를 만들고 입력받은 커멘드의 a와 b의 수식을 만들어보자
 // command: (add, substract, divide, multiply, remainder)
-
-const simpleprin= () 
-console.log('hello consept',);
-lkd w do k welk false, kla FormData
-;kw else,fm WebGLBuffer;
-dlkjfi k dkls lijasdlkf
-console.log('dlksjf ie wlfkjd f',dfdfd);
-alksdjf o ek fl
