@@ -155,3 +155,5 @@ const simpleMultiply = (a, b) => {
 
 const simpleprin= () 
 console.log('hello consept',);
+lkd w do k welk false, kla FormData
+;kw else,fm WebGLBuffer;
