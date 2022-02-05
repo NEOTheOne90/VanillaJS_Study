@@ -155,6 +155,17 @@ const simpleMultiply = (a, b) => {
 function calculate(command, a, b) {
     switch (command) {
         case 'add':
-         return a +b;
+            return a + b;
+        case 'substract':
+            return a - b;
+        case 'divide':
+            return a / b;
+        case 'multiply':
+            return a * b;
+        case 'remainder':
+            return a % b;
+        default:
+            throw Error('unkonwn command');
     }
 }
+console.log(calculate('add', 2, 3));
