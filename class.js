@@ -5,8 +5,3 @@ console.log(neo1 == neo2); //각각 다른 레퍼런스  ----- false
 console.log(neo1 === neo2);// 레퍼런스 값이 다르다. --- false
 console.log(neo1 === neo3); // reference velue값 할당  --- true
 
-
-const add = (a,b) => a + b; // 간결하게 표현이 가능하다.
-const simpleMultiply = (a, b) => {
-    return a * b;
-};
