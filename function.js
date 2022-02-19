@@ -148,6 +148,11 @@ const simpleMultiply = (a, b) => {
     console.log('IIFE');
 })(); //선언함과 동시에 함수를 바로 호출할 수 있다.  
 
+
+// Quiz time
+// function calculate (command, a, b) 
+// 함수를 만들고 입력받은 커멘드의 a와 b의 수식을 만들어보자
+// command: (add, substract, divide, multiply, remainder)
 function calculate(command, a, b) {
     switch (command) {
         case 'add':
