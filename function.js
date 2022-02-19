@@ -148,3 +148,20 @@ const simpleMultiply = (a, b) => {
     console.log('IIFE');
 })(); //선언함과 동시에 함수를 바로 호출할 수 있다.  
 
+function calculate(command, a, b) {
+    switch (command) {
+        case 'add':
+            return a + b;
+        case 'substract':
+            return a - b;
+        case 'divide':
+            return a / b;
+        case 'multiply':
+            return a * b;
+        case 'remainder':
+            return a % b;
+        default:
+            throw Error('unkonwn command');
+    }
+}
+console.log(calculate('add', 2, 3));
