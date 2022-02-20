@@ -26,3 +26,9 @@ const numberFive = 5;
 console.log(stringFive == numberFive); // true 
 console.log(stringFive != numberFive); // false
 
+// === strict equality  
+// no type conversion  타입을 신경써서 타입이 다르니까 false
+// 코딩할때 웬만하면 ===으로 검사하는게 좋다. 
+console.log(stringFive === numberFive); // false
+console.log(stringFive !== numberFive); // true
+
