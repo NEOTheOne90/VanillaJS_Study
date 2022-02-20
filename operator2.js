@@ -1,4 +1,17 @@
+// 7. equality 동등성
+const stringFive = '5';
+const numberFive = 5;
 
+// == loose equality 
+// with conversion    타입없이 안에 숫자 5가 있으니 true
+console.log(stringFive == numberFive); // true 
+console.log(stringFive != numberFive); // false
+
+// === strict equality  
+// no type conversion  타입을 신경써서 타입이 다르니까 false
+// 코딩할때 웬만하면 ===으로 검사하는게 좋다. 
+console.log(stringFive === numberFive); // false
+console.log(stringFive !== numberFive); // true
 
 // object equality by reference
 // 오브젝트는 저장될때 레퍼런스 형태로 저장된다. 
