@@ -1,8 +1,5 @@
 'use strict';
 
-
-
-
 let globalName = 'global name';
 {
     let name = 'byeol'; 
@@ -13,15 +10,6 @@ let globalName = 'global name';
 }
 console.log(name); //코드안에 내용을 불러올 수 없다. 
 console.log(globalName);
-
-// 7. equality 동등성
-const stringFive = '5';
-const numberFive = 5;
-
-// == loose equality 
-// with conversion    타입없이 안에 숫자 5가 있으니 true
-console.log(stringFive == numberFive); // true 
-console.log(stringFive != numberFive); // false
 
 // === strict equality  
 // no type conversion  타입을 신경써서 타입이 다르니까 false
