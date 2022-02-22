@@ -32,3 +32,11 @@ console.log(stringFive != numberFive); // false
 console.log(stringFive === numberFive); // false
 console.log(stringFive !== numberFive); // true
 
+// Q2. iterate from 0 to 10 and print numbers nutil reching 8 (use break)
+// 0부터 10까지 루프 8을 만나면 스톱
+for (let i = 0; i < 11; i++) {
+    if (i > 8) {
+        break;
+    }
+    console.log(`q2. ${i}`);
+}
