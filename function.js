@@ -113,7 +113,18 @@ printAgain;
 const sumAgain = sum; // 위에서 만든 sum을 변수에 할당하면 또 불러올 수 있다.
 console.log(sumAgain(1, 3));
 
-
+// 2-2 Callback function using function expression
+// 함수 표현식을 사용한 콜백 함수
+function randomQuiz(answer, printYes, printNo) {
+    if (answer === 'love you'){
+      printYes();
+    } else {
+      printNo();
+    }
+  }
+  const printYes = function () { 
+      console.log('yes!');
+  };
 
 const printNo = function print() {
     console.log('no!');
