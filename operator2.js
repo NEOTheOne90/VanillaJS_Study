@@ -109,13 +109,6 @@ for (let i = 3; i > 0; i = i - 2) {
     console.log(`inline veriable for: ${i}`);
 }
 
-// nested loops
-for (let i = 0; i < 10; i++) {
-    for (let j = 0; j < 10; j++) {
-        console.log(`i: ${i}, j:${j}`);
-    }
-}
-
 // break => 루프를 완전히 끝내는것  |    continue => 지금껏 스킵 다음으로 넘어가는것
 // Q1. iterate from 0 to 10 and print only even numbers (use continue)
 // 숫자를 0부터 10까지 짝수인 아이들만 프린트 
