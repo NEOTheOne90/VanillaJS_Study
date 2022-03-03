@@ -102,6 +102,16 @@ function upgradeUser(user) {
 // 다른 함수에 인수로 전달할 수 있습니다. 
 // 다른 함수에서 반환될 수 있습니다.
 
+// 2-1 Function expression 
+// 함수가 선언되기 이전에 호출해도 호출이 가능하다.
+const print = function () { // 함수선언과 동시에 print에 할당이된다.
+    console.log('print');   // anonymous function 이름이 없는 함수
+};
+print();
+const printAgain = print;
+printAgain;
+const sumAgain = sum; // 위에서 만든 sum을 변수에 할당하면 또 불러올 수 있다.
+console.log(sumAgain(1, 3));
 
 // 2-2 Callback function using function expression
 // 함수 표현식을 사용한 콜백 함수
