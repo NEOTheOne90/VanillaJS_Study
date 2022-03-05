@@ -1,6 +1,15 @@
 'use strict';
 
-
+let globalName = 'global name';
+{
+    let name = 'byeol'; 
+    console.log(name);
+    name = 'hello';    
+    console.log(name);
+    console.log(globalName);
+}
+console.log(name); //코드안에 내용을 불러올 수 없다. 
+console.log(globalName);
 
 // === strict equality  
 // no type conversion  타입을 신경써서 타입이 다르니까 false
